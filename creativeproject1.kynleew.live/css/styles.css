@@ -15,7 +15,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #fff;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', sans-serif !important;
 }
 
 .bg-darknew {
@@ -184,9 +184,18 @@ h4, p{
     background-color: var(--columbia-blue);
     opacity:0.75;
     outline: .25px solid var(--beau-blue);
-    font-weight: bold;
-    padding:9px;
+    font-weight: bolder;
+    font-size: 25px;
+    padding:7px;
     margin:15px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+form{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .paragraph{
@@ -202,4 +211,42 @@ h4, p{
 #chat-pic{
     size-adjust: 50% !important;
 } 
+
+#urlSubmit{
+    align-content: center;
+}
+
+.anotherOne{
+    /* margin:20px; */
+    align-items: center !important;
+}
 /* Probably not doing anything^^^ */
+
+.jsonImg{
+    border-color:#394053;
+    border-style:solid;
+    border-width: 7px;
+    margin-top: 50px;
+    /* margin: 100px; */
+    padding: 10px;
+    max-width:600px;
+    max-height: 600px;
+}
+input{
+    align-content: center !important;
+}
+#prompt{
+    border-color: #394053;
+    border-width:1.5px;
+    border-style:inset;
+}
+/* .border{
+    border:#394053;
+    border-color: #394053;
+    border-width:thick;
+} */
+
+/* #prompt{
+    font-size: 25px;
+    font-weight: bold;
+} */

@@ -1,0 +1,18 @@
+document.getElementById("urlSubmit").addEventListener("click", function(event) {
+  event.preventDefault();
+  const value = document.getElementById("numInput").value;
+  if (value === "")
+    return;
+  console.log(value);
+
+  const url = "https://randomfox.ca/floof/";
+  fetch(url)
+    .then(function (response) {
+      return response.json();
+    }).then(function (json) {
+      let results = "";
+      results += '<img class=jsonImg src="' + json.image + '"/>';
+      document.getElementById("myResults").innerHTML = results;
+  })
+
+});
